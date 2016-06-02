@@ -1,0 +1,487 @@
+/*
+
+Clearfix
+
+*/
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/*
+CSS RESET
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*
+Colors
+*/
+/*
+
+Darker blue - #2c3e50
+Dark blue - #2980b9
+Light blue - #3498db
+White~ - white
+Red - #e74c3c
+
+*/
+
+/*
+
+Custom
+
+*/
+
+body {
+  background: white;
+  font-family: 'Hero';
+  color: white;
+  font-size: 27px;
+}
+
+.logo {
+  height: 22px;
+  cursor: pointer;
+}
+
+.pull-right {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.underline {
+  border-bottom: 2px solid white;
+}
+
+.underline-alt {
+  border-bottom: 2px solid #2c3e50;
+}
+
+.big-text {
+  font-size: 82px;
+  font-family: "Hero Light";
+  line-height: 100px;
+  margin-bottom: 40px;
+}
+
+.medium-text {
+  font-size: 50px;
+  font-family: "Hero Light";
+}
+
+.big-icon {
+  height: 154px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+/*
+
+Buttons
+
+*/
+
+.btn {
+  padding: 10px 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-green {
+  background-color: #72bd45;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/*
+
+Layout
+
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section {
+  height: 100vh;
+  padding: 40px;
+}
+
+.col {
+  display: inline-block;
+}
+
+.col-offset-6 {
+  margin-left: 50%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+/* Header */
+
+.header {
+  height: 52px;
+  padding: 15px;
+}
+
+.nav-list {
+  list-style-type: none;
+  color: #2c3e50;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.nav-list > li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.nav-list > li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.nav-list > li:first-of-type {
+  border-bottom: 1px solid #2c3e50;
+  font-weight: bold;
+}
+
+.nav-list > li:last-of-type {
+  margin-right: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.nav-list a:visited {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.login {
+  cursor: pointer;
+}
+
+/*
+
+Footer
+
+*/
+
+footer {
+  background-color: #2c3e50;
+  height: 52px;
+  padding: 15px;
+}
+
+.copyright {
+  display: inline;
+  position: relative;
+  top: -2.5px;
+  color: #ecf0f1;
+}
+
+/* Section hero */
+
+.section-hero {
+  background: url("assets/hero-bg.jpg") no-repeat;
+  background-size: cover;
+  padding: 0;
+  padding-top: 46px;
+}
+
+.section-hero h1 {
+  font-variant: small-caps;
+}
+
+.actions a {
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+}
+
+.section-hero a:visited {
+  color: white;
+}
+
+.section-hero li {
+  position: relative;
+}
+
+.section-hero li > a > span {
+  position: absolute;
+  font-variant: small-caps.
+}
+
+.actions {
+  position: relative;
+  left: -40px;
+  margin-bottom: 40px;
+}
+
+.hero-icon {
+  height: 50px;
+  margin-right: 15px;
+}
+
+/* Section plan */
+
+.section-plan {
+  background: url("assets/plan-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.section-plan h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.plan-body {
+  margin-left: 44px;
+}
+
+.plan-list {
+  vertical-align: top;
+  margin-top: 22px;
+  line-height: 35px;
+}
+
+/* Section control */
+
+.section-control {
+  background: url("assets/control-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.section-control p {
+  margin-top: 40px;
+  line-height: 50px;
+}
+
+/* Section improve */
+
+.section-improve {
+  background: white url("assets/improve-bg.jpg") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  color: #2c3e50;
+}
+
+.section-improve h1 {
+  margin-left: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.section-improve > div:last-of-type {
+  min-height: 200px;
+  vertical-align: top;
+  margin-top: 60px;
+  line-height: 50px;
+}
+
+/* Section pricing */
+
+.section-pricing {
+  background-color: #3498db;
+}
+
+.section-pricing > p {
+  letter-spacing: 10px;
+  line-height: 60px;
+}
+
+.section-pricing > p > strong {
+  text-transform: uppercase;
+}
+
+.plan {
+  width: 344px;
+}
+
+.pricing-head {
+  height: 60px;
+  background: #ecf0f1;
+  text-transform: uppercase;
+  color: #2c3e50;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.pricing-body {
+  text-align: center;
+  height: 340px;
+  background: white;
+  padding-top: 15px;
+  position: relative;
+}
+
+.suggested-body {
+  height: 400px;
+  position: relative;
+}
+
+.price {
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
+  height: 25%;
+}
+
+.coin, .value {
+  color: #2980b9;
+  display: inline-block;
+}
+
+.coin {
+  position: relative;
+    left: 0;
+    font-size: 34px;
+    display: inline-block;
+    top: -30px;
+}
+
+.value {
+  font-size: 76px;
+  top: 0;
+  position: relative;
+  /*left: 25px;*/
+}
+
+.desc {
+  color: #2c3e50;
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  left: -5px;
+  top: -10px;
+}
+
+.features {
+  color: #2c3e50;
+  width: 205px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.features li {
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+.plus-feature {
+  font-weight: 400 !important;
+}
+
+.plan {
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.plan-wrapper {
+  width: 1080px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.bottom-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+}
