@@ -1,2 +1,2 @@
-# growboi
+# Growboi
 Cool cows, cool software.
