@@ -156,6 +156,7 @@ Buttons
   text-transform: uppercase;
   display: inline-block;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .btn-green {
@@ -163,10 +164,19 @@ Buttons
   color: white;
 }
 
+.btn-green:hover {
+  background-color: hsla(97.5, 47.6%, 50.6%, 0.8);
+}
+
 .btn-primary {
   background-color: #e74c3c;
   color: white;
 }
+
+.btn-primary:hover {
+  background-color: #ff5542;
+}
+
 
 /*
 
